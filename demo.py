@@ -1,7 +1,13 @@
 class Cuadrado:
-    def __init__ (self,lado):
-self.lado = lado
-      def area (self):
-       return self.lado **2
-Numlado = Cuadrado(23):
-print ("el lado del cuadrado es",Numlado.area())
+    def __init__(self,lado):
+        self.lado = lado
+
+
+        def area(self):
+            return self.lado * self.lado
+
+############################################################################################
+lado = int(input("ingresa el lado"))
+mi_ejemplo = Cuadrado(lado)
+r = mi_ejemplo.area()
+print(f"el area es {r}")
